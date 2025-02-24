@@ -17,7 +17,7 @@ func areOccurrencesEqual1(s string) bool {
         hash[x]++
     }
 
-    times := 0;
+    times := 0
     for _,val := range hash {
         if times == 0 {
             times = val
@@ -53,7 +53,7 @@ func areOccurrencesEqual3(s string) bool {
         hash[s[i]]++
     }
 
-    times := hash[s[0]];
+    times := hash[s[0]]
     for _,val := range hash {
         if val != times {
             return false
@@ -70,7 +70,7 @@ func areOccurrencesEqual4(s string) bool {
         hash[x-'a']++
     }
 
-    times := 0;
+    times := 0
     for _,val := range hash {
         if val == 0 {
             continue
